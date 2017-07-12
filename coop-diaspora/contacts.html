@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Co-operative Bank Diaspora</title>
+
+<!---Favicon--->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<!---Css--->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+<!---Javascript--->
+<script type="text/javascript" src="js/googleapis.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+</head>
+
+<body>
+<!--Top header-->
+<header class="topheader">
+  <div class="container">
+    <div class="align-left toplink"><a href="#">Main Co-op Bank Website</a> </div>
+    <div class="align-right">
+      <div class="searchbutton">
+        <div id="sb-search" class="sb-search " >     
+          <form>
+            <input class="sb-search-input " onkeyup="buttonUp();" placeholder="I'm searching for..." onblur="monkey();" type="search" value="" name="search" id="search">
+            <input class="sb-search-submit" type="submit"  value="">
+            <span class="sb-icon-search"><i class="fa fa-search"></i></span>     
+          </form>
+        </div>
+      </div>
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-menu1">
+          <ul class="navigation">
+            <li><a href="about-us.html" class="internt-bank">Login to Internet Banking</a></li>
+            <li><a href="loancalculator.html">Mortgage Calculator</a></li>
+            <li class="active"><a href="contacts.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!--Main header-->
+<header class="mainheader">
+  <div class="container">
+    <div class="align-left logoarea"> <a href="index.html"><img src="images/co-oopdiaspora_logo.png" alt="Co-operative Bank" /></a> </div>
+    <div class="align-left mainmenu"> </div>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu2"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-menu2">
+        <ul class="navigation">
+          <li><a href="accounts.html">Accounts</a> </li>
+          <li><a href="investments.html">Investment Opportunities </a></li>
+          <li><a href="loans.html">Loans</a></li>
+          <li><a href="moneytransfer.html">Money Transfer</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="insurance.html"> Insurance</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </div>
+</header>
+
+<!--Main Slider-->
+<section class="mainslider">
+  <div class="topbanner"><img src="images/inside_topbanner6.jpg" alt="Co-operative Bank" /></div>
+</section>
+
+<!--Main Slider-->
+<section class="contentwrapper">
+  <div class="container">
+    <div class="row">
+      <div class="left-content maincontent">
+        <h1>Contact Us</h1>
+        <h5>We are happy to answer any questions
+you may have on our products and services.</h5>
+        <p><strong>Contact our Head Office;</strong></p>
+        <p>Co-operative House<br>
+          Haile Selassie Avenue</p>
+        <p>P.O. Box: 48231 - 00100, Nairobi.<br>
+          Tel: 3276000 Fax: 219831<br>
+          Operating hours: 8.00AM-5.00PM (Monday to Friday)<br>
+          NB: Closed on Weekends and Public Holidays</p>
+        <p>OR</p>
+        <p><strong>Diaspora Contact Numbers:</strong></p>
+        <p>+254 711 049 287<br>
+          +254 711 049 467<br>
+          +254 711 049 332<br>
+          +254 711 049 972</p>
+        <p>SMS: 16111 Fax: 3276 518<br>
+          E-mail: diasporabanking@co-opbank.co.ke ​<br>
+          WhatsApp: +254 736 690 101</p>
+      </div>
+      <div class="right-content formarea">
+        <h1>To contact us please fill out the form below.</h1>
+        <form action="" method="POST" class="liveForm" id="contact-form" role="form" data-email-subject="Contact Form" data-show-errors="true" data-hide-form="false" novalidate="">
+          <input type="hidden" name="form_key" id="form_key" value="">
+          <fieldset>
+            <div class="row">
+              <div class="col-md-12"> 
+                <!-- Alert Box-->
+                
+                <div class="form-group"> 
+                  <!-- Name Field -->
+                  <div class="control-group">
+                    <div class="controls">
+                      <input class="form-control" name="name" type="text" id="inputName" placeholder="Your Name" required="">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- E-mail Field -->
+                
+                <div class="form-group">
+                  <div class="control-group">
+                    <div class="controls">
+                      <input class="form-control" name="email" type="email" placeholder="Your Email" id="inputEmail" required="">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"> 
+                  <!-- Phone Field -->
+                  <div class="control-group">
+                    <div class="controls">
+                      <input class="form-control" name="phonenumber" type="text" placeholder="Your Phone Number" id="inputPhone" required="">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="control-group">
+                    <div class="controls">
+                      <input class="form-control" name="country" type="text" placeholder="Your Country of Residence" id="inputEmail" required="">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"> 
+                  <!-- product Field -->
+                  <div class="control-group">
+                    <div class="controls">
+                      <input class="form-control" name="product" type="text" placeholder="Which Product Are You Interested in?" id="inputproduct" required="">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <textarea class="form-control" rows="5" name="message" placeholder="Your Message" id="inputMessage" minlength="0" required="" ></textarea>
+                    <p class="help-block"></p>
+                  </div>
+                  
+                  <!-- Submit Button -->
+                  <div class="text-right">
+                    <button type="submit" name="sbutton" value="Send" class="btn btn-primary ">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Main Top Content-->
+<section class="topmain_cont">
+  <div class="container">
+    <div class="row"> <a href="accountopening.html">Open An Account now!</a> </div>
+  </div>
+</section>
+
+<!--Main Middle Content-->
+<section class="middlemain_cont">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 iconbox col-sm-3"> <a href="#">
+        <div class="iconarea"><img src="images/accounts_icons.png" alt="Co-operative Bank" /></div>
+        <p>Manage Your Account</p>
+        </a> </div>
+      <div class="col-xs-6 iconbox col-sm-3"> <a href="#">
+        <div class="iconarea"><img src="images/pig_icon.png" alt="Co-operative Bank" /></div>
+        <p>Fund Your Account</p>
+        </a> </div>
+      <div class="col-xs-6 iconbox col-sm-3"> <a href="#">
+        <div class="iconarea"><img src="images/loans_icons.png" alt="Co-operative Bank" /></div>
+        <p>Get A Loan</p>
+        </a> </div>
+      <div class="col-xs-6 iconbox col-sm-3"> <a href="#">
+        <div class="iconarea"><img src="images/dollar_icon.png" alt="Co-operative Bank" /></div>
+        <p>Invest Back At Home</p>
+        </a> </div>
+    </div>
+  </div>
+</section>
+<footer class="mainfooter">
+  <div class="container">
+    <div class="row">
+      <div class="footer_cont col-xs-12">
+        <div class="col-xs-6 col-sm-4">
+          <h1>Quick Links</h1>
+          <ul>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+          <h1>Physical Address</h1>
+          <p>Diaspora Centre<br>
+            Co-operative House<br>
+            Haile Selassie Avenue<br>
+            P.O Box 48231-00100, Nairobi<br>
+            Fax 219831</p>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+          <h1>Connect with us</h1>
+          <ul class="socialIcons bigIcons">
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="" data-original-title="Facebook" class="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="" data-original-title="Twitter" class="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="" data-original-title="Youtube" class="youtube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="" data-original-title="Linkedin" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+          <p>Tel: +254 327 6000<br>
+            Email: <a href="mailto:diasporabanking@co-opbank.co.ke">diasporabanking@co-opbank.co.ke</a><br>
+            WhatsApp: +254 736 690 101 ​</p>
+        </div>
+      </div>
+      <div class="bottomfooter col-xs-12">
+        <div class="col-xs-12 col-sm-8">
+          <p>© 2016 Co-operative Bank of Kenya <a href="#"> Disclaimer   Website Terms & Conditions</a></p>
+          <p>Authorised financial services and registered credit provider. Co-operative Bank is Regulated by the Central Bank of Kenya.</p>
+        </div>
+        <div class="col-xs-6 col-sm-4"> <a href="#" class="message-block">Leave us a message</a> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script> 
+<script type="text/javascript" src="js/uisearch.js"></script> 
+<script type="text/javascript">
+$.noConflict();
+jQuery(document).ready(function(){
+    jQuery('.bxslider').bxSlider({
+	mode: 'fade',
+	controls: false
+});
+}); 
+	
+</script>
+</body>
+</html>

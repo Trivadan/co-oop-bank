@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Co-operative Bank Sudan</title>
+
+<!---Favicon--->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<!---Css--->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+<!---Javascript--->
+<script type="text/javascript" src="js/googleapis.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--Top header-->
+<header class="topheader">
+<div class="container">
+<div class="align-right">
+
+      <div class="searchbutton">      
+        <div id="sb-search" class="sb-search " >
+    <form>
+        <input class="sb-search-input " onkeyup="buttonUp();" placeholder="I'm searching for..." onblur="monkey();" type="search" value="" name="search" id="search">
+        <input class="sb-search-submit" type="submit"  value="">
+        <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+    </form>
+    </div>
+      </div>
+      
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-menu1">
+          <ul class="navigation">
+            <li><a href="about-us.html">About Us</a></li>     
+            <li><a href="#">Branch Network</a></li>     
+            <li><a href="#">Media Centre</a></li>     
+            <li><a href="#">Careers</a></li>     
+            <li><a href="#">Tenders</a></li>     
+            <li><a href="contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</div>
+</header>
+
+<!--Main header-->
+<header class="mainheader">
+<div class="container">
+<div class="align-left logoarea"> <a href="index.html"><img src="images/co-oopsudan_logo.png" alt="Co-operative Bank" /></a> </div>
+    <div class="align-left">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu2">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-menu2">
+          <ul class="navigation">
+            <li><a href="accounts.html">Accounts</a></li>         
+            <li><a href="#">Money Transfer</a></li>      
+            <li><a href="#">Loans</a></li>        
+            <li><a href="#">Cards</a></li>        
+            <li><a href="#">Trade Finance</a></li>       
+            <li><a href="#"> Revenue Collection</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</div>    
+</header>
+
+<!--Main Slider-->
+<section class="mainslider">
+<div class="topbanner">
+<img src="images/coopbank-contacts.jpg" alt="Co-operative Bank" />
+<div class="topbanner_content">
+<h1>Contact Us</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur posuere turpis, vel euismod nunc suscipit ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In dapibus tellus vel nisl venenatis, at dictum nisl egestas. Nam porttitor, orci mollis dapibus viverra, ipsum diam efficitur tellus, vel tristique ipsum ex quis lacus. Ut et suscipit nisi, sit amet molestie leo.</p>
+</div>
+</div>
+</section>
+
+
+<!--Main Middle Content-->
+<section class="midabout_cont">
+<div class="container">
+<div class="contactarea">
+<div class="headpage"><h1>Contact Us</h1></div>
+<div class="formarea col-sm-8">
+<form action="" method="POST" class="form-horizontal" id="contact-form" novalidate="">
+	  <input type="hidden" name="form_key" id="form_key" value="">	  <fieldset>
+		<!-- Alert Box-->
+				
+				
+		<!-- Name Field -->
+         <div class="form-group">
+		  <div class="control-group">
+			<label class="control-label" for="inputName">Name<span> * </span></label>
+			<div class="controls">
+			  <input class="input-80" name="name" type="text" id="inputName"  required="">
+			  <p class="help-block"></p>
+			</div>
+		  </div>
+          </div>
+		 
+		 <!-- E-mail Field -->
+		  	 <div class="form-group">		  
+		  <div class="control-group">
+        	<label class="control-label" for="inputEmail">Email<span> * </span></label>
+			<div class="controls">
+			  <input class="input-80" name="email" type="email" id="inputEmail" required="">
+			  <p class="help-block"></p>
+			</div>
+		  </div>
+          </div>
+		  
+		  		 
+		 <!-- Subject Field -->
+          <div class="form-group">
+		  <div class="control-group">
+			<label class="control-label" for="selectSubject">Type of inquiry <span> * </span></label>
+			<div class="controls">
+				<select class="input-80" id="selectSubject" name="type">
+                <option value="question">---</option>
+				  <option value="question">Question</option>
+				  <option value="support">Comments</option>
+				  <option value="misc">Other</option>
+				</select>
+							</div>
+		  </div>
+          </div>
+		  		 
+		 <!-- Message Field -->
+          <div class="form-group">
+		  <div class="control-group">
+			<label class="control-label" for="inputMessage">Your Message <span> * </span></label>
+			<div class="controls">
+			  <textarea class="input-80" name="message" rows="12" id="inputMessage" minlength="0" required=""></textarea>
+			  <p class="help-block"></p>
+			</div>
+		  </div>
+          </div>
+		  		 
+		 <!-- Submit Button -->
+         <div class="form-group">
+		  <div class="control-group">
+			<div class="controls">
+			  <button type="submit" name="sbutton" value="Send" class="btn submitbutton">Send</button>
+			</div>
+		  </div>
+          </div>
+	</fieldset>
+	</form>
+</div>
+
+<div class="infoarea col-sm-4">
+<h1>Contact our Head Office;</h1>
+<p>Co-operative House<br>
+Juba Avenue<br>
+P.O. Box: 48231 - 00100, Juba.<br>
+Tel: 3276000 Fax: 219831<br>
+</p>
+<p>Contact our 24/7 Call Centre:<br>
++254 711 049 080 /972/287/563/ 971/ 616 / 332<br>
+SMS: 16111 Fax: 3276 518<br>
+E-mail: <a href="mailto:southsudan@co-opbank.co.ke ">southsudan@co-opbank.co.ke</a>​ ​<br>
+WhatsApp: +254 736 690 101</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!--Main Middle Content-->
+<section class="bottomcontact">
+<div class="container">
+<h1>Lost Or Stolen Debit Card?</h1>
+<p>Lost/stolen debit cards – If you need to report your existing ATM/Check Card as lost or stolen, please call  3276000 for assistance 24 hours a day, 7 days a week. After you have successfully reported your card as lost or stolen using the phone number above, please contact your Co-op Bank representative at 3276000. </p>
+</div>
+</section>
+
+
+<footer class="mainfooter">
+<div class="container">
+<div class="footer_cont">
+<div class="col-sm-3">
+<h1>Banking with us</h1>
+<ul>
+<li><a href="#">Personal Banking</a></li>
+<li><a href="#">Corporate Banking</a></li>
+<li><a href="#">Co-op Bank Debit Card</a></li>
+<li><a href="#">Customer Care</a></li>
+<li><a href="#">Find a branch</a></li>
+<li><a href="#">Calculators</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<h1>Resources</h1>
+<ul>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Photo Gallery</a></li>
+<li><a href="#">Latest news</a></li>
+<li><a href="#">FAQ's</a></li>
+<li><a href="#">Application Foms</a></li>
+<li><a href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="col-md-6">
+<h1>Regulations and Policies</h1>
+<ul>
+<li><a href="#">Banking Codes & Standards Board of S.Sudan</a></li>
+<li><a href="#">Co-op Bank Foundation</a></li>
+<li><a href="#">Code of Banks' Commitment to SME's</a></li>
+<li><a href="#">Complaints Handling Process</a></li>
+<li><a href="#">AML/KYC Policy</a></li>
+</ul>
+</div>
+</div>
+
+<div class="bottomfooter">
+<ul>
+<li><a href="#">Terms of use</a></li>
+ | <li><a href="#">Conﬁdentiality policies</a></li> | <li><a href="#">Cookies</a></li> | <li><a href="#">ABCs of security</a></li>
+</ul>
+<p>&copy; Co-operative Bank of South Sudan. All rights reserved 2016.</p>
+</div>
+
+</div>
+</footer>
+
+<script type="text/javascript" src="js/uisearch.js"></script>
+<script type="text/javascript">
+$('.mainheader').addClass('original').clone().insertAfter('.mainheader').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+scrollIntervalID = setInterval(stickIt, 10);
+function stickIt() {
+  var orgElementPos = $('.original').offset();
+  orgElementTop = orgElementPos.top;               
+  if ($(window).scrollTop() >= (orgElementTop)) {    
+    orgElement = $('.original');
+    coordsOrgElement = orgElement.offset();
+    leftOrgElement = coordsOrgElement.left;  
+    widthOrgElement = orgElement.css('width');
+    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+    $('.original').css('visibility','hidden');
+  } else {
+    $('.cloned').hide();
+    $('.original').css('visibility','visible');
+  }
+}  
+</script>
+</body>
+</html>

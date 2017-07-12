@@ -1,0 +1,592 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@-webkit-viewport {width: device-width;}
+@-moz-viewport {width: device-width;}
+@-ms-viewport {width: device-width;}
+@-o-viewport {width: device-width;}
+@viewport {width: device-width;}
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+body {
+	width:100%;
+	margin:0 auto;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+    min-height: 100%;
+	font-weight:400;
+}
+a {
+}
+a:hover {
+	text-decoration:none;
+	-moz-transition: 1.1s all ease;
+	-o-transition: 1.1s all ease;
+	-webkit-transition: 1.1s all ease;
+	transition: 1.1s all ease;
+}
+li {
+	list-style:none;
+}
+.align-left {
+	float:left;
+}
+.align-right {
+	float:right;
+}
+.main_wrapper {
+	background:url(../images/mainbg.jpg) no-repeat 100% 100% fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:100%;
+	position:fixed;
+}
+.container {
+	width:100%;
+	height:100%;
+	position:relative;
+	margin:0 auto;
+}
+
+.menu_header{
+	width:100%;
+	background:#032a15;
+	z-index:999;
+	position:fixed;
+	top:0;
+	text-align:center;
+}
+.menu_header ul li{
+	display:inline-block;
+	list-style:none;
+	text-align:center;
+	margin:0 30px;
+}
+.menu_header a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:18px;
+	text-transform: uppercase;
+	padding:10px 15px;
+	display:inline-block;
+}
+.menu_header a:hover,
+.menu_header li.active a{
+	color:#7bc146;
+}
+
+.header {
+	width:90%;
+	display:table;
+	clear:both;
+	margin:2% auto 0;
+}
+.logoarea {
+	float:right;
+	margin-top:3%;
+}
+.mainpic {
+	position:absolute;
+	left:0;
+	bottom:0;
+	float:left;
+}
+.contentarea {
+	width: 35%;
+	float: right;
+	margin-right: 10%;
+	color: #FFF;
+	font-size: 20px;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+.homelink a {
+	background:#FFF;
+	color:#032a15;
+	text-transform:uppercase;
+	font-size:18px;
+	padding:10px 40px;
+	text-decoration:none;
+	margin-top:30px;
+	display:inline-block;
+	font-weight:700;
+}
+.homelink a:hover {
+	background:#7bc146;
+	color:#FFF;
+}
+.contentarea2{
+    margin-top:30px;	
+}
+.footer {
+	width:100%;
+	border-bottom:10px solid #FFF;
+	position: absolute;
+	bottom:0;
+	right:0;
+	left:0;
+}
+.footer_2{
+	position:relative !important;
+	display:block;
+	clear:both;
+}
+.footer img {
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin-bottom:-5px;
+}
+.linkbuttons a{
+	display:inline-block;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin-right:10px;
+	font-weight:700;
+	background:#FFF;
+	color:#032a15;
+	text-transform:uppercase;
+	text-decoration:none;
+	margin-top:30px;	
+}
+.linkbuttons a:hover {
+	background:#7bc146;
+	color:#FFF;
+}
+.innercontent {
+	margin-top:10px;
+}
+.innercontent li {
+	font-size: 14px;
+	margin:2px 0;
+	display: inline-block;
+	width: 100%;
+}
+.iconimage {
+	width:12%;
+	float:left;
+}
+.innercontent span {
+	width:86%;
+	float:right;
+}
+.picarea {
+	width:430px;
+	height:380px;
+	float: right;
+	margin-right:10%;
+	margin-top:1%;
+	padding:10px;
+	border:1px solid #fff;
+}
+.picheader {
+	width: 100%;
+	color: #FFF;
+	text-align: left;
+	font-weight: bold;
+	font-size:26px;
+	margin-bottom:5px;
+	padding-left:20px;
+}
+.pic_container {
+	width:100%;
+	height:350px;
+	/*background:#053117;*/
+}
+.scroll-pane {
+	width: 97%;
+	height: 340px;
+	margin-top:5px;
+	color:#FFF;
+	overflow: auto;
+}
+.scroll-pane ul li {
+	width:100px;
+	height:100px;
+	float:left;
+	margin-left:5%;
+	margin-top:10px;
+	border:solid thin #CCC;
+	list-style:none;
+	cursor:pointer;
+}
+/****************Js Scroll Pane Css*********************/
+.picarea .jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+.picarea .jspPane {
+	position: absolute;
+}
+.picarea .jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+.picarea .jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+.picarea .jspCap {
+	display: none;
+}
+.picarea .jspHorizontalBar .jspCap {
+	float: left;
+}
+.picarea .jspTrack {
+	background: #36a63d;
+	position: relative;
+}
+.picarea .jspDrag {
+	background: #30932f;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.picarea .jspHorizontalBar .jspTrack, .picarea .jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+.picarea .jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+.picarea .jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+.picarea .jspVerticalBar .jspArrow {
+	height: 16px;
+}
+.picarea .jspHorizontalBar .jspArrow {
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+.picarea .jspVerticalBar .jspArrow:focus {
+	outline: none;
+}
+.picarea .jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+	margin: 0 -3px 0 0;
+}
+.download_buttons {
+    float: left;
+    margin-top: 30px;
+}
+.download_buttons ul li {
+	float:left;
+	margin-right:20px;
+}
+.leaderboardarea {
+	width:80%;
+	height:380px;
+	float: right;
+	margin-right:10%;
+	margin-top:5px;
+	padding:10px;
+    z-index:99;
+	position:relative;
+}
+/*.picheader {
+	width: 100%;
+	color: #FFF;
+	line-height: 30px;
+	text-align: left;
+	font-weight: bold;
+	font-size:30px;
+	margin-bottom: 15px;
+}*/
+.mainpic_opacity{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+  -moz-opacity: 0.2;
+  -khtml-opacity: 0.2;
+  opacity: 0.2;	
+}
+.lead_container {
+	width:100%;
+	height:350px;
+}
+#scroll-pane {
+	width:100%;
+	height: 340px;
+	margin-top:5px;
+	color:#FFF;
+	overflow: auto;
+}
+#scroll-pane ul li {
+	width:100%;
+	float:left;
+	margin-left:0;
+	margin-top:10px;
+	background:rgba(123,193,70,0.2);
+	list-style:none;
+	cursor:pointer;
+}
+#scroll-pane ul li:hover{
+ background:rgba(123,193,70,0.9);	
+}
+.leadpic{
+	float:left;
+	width:15%;
+}
+.leadname{
+	float:left;
+	width:40%;
+}
+.leaddownloads{
+	float:left;
+	width:15%;
+	text-align:center;
+}
+.leadshare{
+	float:left;
+	width:15%;
+	text-align:center;
+}
+.leadpoints{
+	float:left;
+	width:15%;
+	text-align:center;
+}
+.leaddownloads_header{
+	float:right;
+	width:15%;	
+}
+.leadshare_header{
+	float:right;
+	width:15%;		
+}
+.leadshare_header span{
+	margin-left:20px;
+}
+.leadpoints_header{
+	float:right;
+	width:15%;		
+}
+.leaddownloads_header span{
+	margin-left:20px;
+}
+.leaddownloads_header, .leadshare_header, .leadpoints_header{
+	font-weight:normal;
+	font-size:16px;
+}
+/****************Js Scroll Pane Css*********************/
+.leaderboardarea .jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+.leaderboardarea .jspPane {
+	position: absolute;
+}
+.leaderboardarea .jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+.leaderboardarea .jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+.leaderboardarea .jspCap {
+	display: none;
+}
+.leaderboardarea .jspHorizontalBar .jspCap {
+	float: left;
+}
+.leaderboardarea .jspTrack {
+	background: #36a63d;
+	position: relative;
+}
+.leaderboardarea .jspDrag {
+	background: #30932f;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.leaderboardarea .jspHorizontalBar .jspTrack, .leaderboardarea .jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+.leaderboardarea .jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+.leaderboardarea .jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+.leaderboardarea .jspVerticalBar .jspArrow {
+	height: 16px;
+}
+.leaderboardarea .jspHorizontalBar .jspArrow {
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+.leaderboardarea .jspVerticalBar .jspArrow:focus {
+	outline: none;
+}
+.leaderboardarea .jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+/*.galleryarea{
+	background: #073d20;
+	width: 100%;
+	height: auto;
+	display: block;
+	clear: both;
+}*/
+.galleryarea{
+	width:100%;
+	display:inline-block;
+	clear:both;
+	margin:0 auto;
+	position:relative;
+}
+.wrapper{
+	background: #073d20;
+	width: 100%;
+	height: auto;
+	display: block;
+	clear: both;	
+}
+#instagramarea{
+	width: 73%;
+	height: auto !important;
+	float: left;
+	margin-left: 2%;
+	margin-top: 6%;
+	padding-bottom: 20px;
+	display: inline-block;	
+}
+.gall_container{
+	width: 23%;
+	height: auto;
+	background-color:#fff;
+	float: left;
+	margin-left: 16px;
+	margin-top:10px;
+	border-radius:5px;
+}
+.gall_container img{
+	max-width:100%;
+	border-radius: 5px 5px 0px 0px;
+}
+.item {
+	 width: 100%; 
+	 clear:both; 
+}
+.item p{
+	width:90%;
+	margin:auto;
+	text-align:left;
+	padding:10px 10px 23px 10px;
+	font-size:12px;
+	line-height:18px;
+    color: #666;
+}
+.smallpic{
+	width:20%;
+	height:50px;
+	float:left;
+	margin-left:2%;
+	margin-bottom:10px;
+}
+.smallpic img{
+	width:100%;
+	border-radius:5px;
+}
+.titleName{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #000;
+	font-weight:bold;
+	display: block;
+	white-space: nowrap;
+	padding-left:2%;
+}
+.cityname{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #073f27;
+	margin-left:2%;
+}
+.twitterarea{
+	width:21%;
+	height:600px;
+	position:fixed;
+	right:3%;
+	border-radius:5px;
+	background-color:#FFF;
+	margin-top: 7.7%;
+}
+.twitterarea p{
+	color:#000;
+}
+
+@media (max-width:810px) {
+.logoarea {
+   width:70%;
+}
+.logoarea img {
+   width:100%;
+}
+.mainpic {
+    width:55%;
+}
+.mainpic img {
+    width:100%;
+}
+.contentarea {
+	width:40%;
+	margin-right:5%;
+	font-size:16px;
+	margin-top:80px;
+}
+.innercontent li {
+    font-size: 13px;
+}
+.contentarea2 {
+    margin-top:10px;
+}
+}
